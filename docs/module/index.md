@@ -1,13 +1,19 @@
 ---
 lang: en-US
-title: Title of this page
+title: Modules
 description: Description of this page
 sidebar: auto
+next:
+  text: Laravel Modules
+  link: /module
+prev:
+  text: Guide
+  link: /guide
 ---
+# Module List
+All the module are listed here.
 
-# From Module Index Page
-lorem ipus
-
-## awesome man
-lorem
-
+## Base Modules
+::: tip Language
+[Language Module](/module/language)
+:::

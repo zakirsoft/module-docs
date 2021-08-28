@@ -14,11 +14,11 @@ module.exports = {
 //     },
 //   },
   lang: 'en-US',
-  title: 'VuePres Docs',
-  head: [['link', { rel: 'icon', href: 'https://vuejs.org/images/logo.png' }]],
+  title: 'Laravel Module',
+  head: [['link', { rel: 'icon', href: '/images/favicon.png' }]],
 
   themeConfig: {
-    logo: 'https://vuejs.org/images/logo.png',
+    logo: '/images/logo.png',
     docsDir: 'docs',
     // locales: {
     //   '/': {
@@ -31,31 +31,11 @@ module.exports = {
     sidebar: 'auto',
     navbar: [
         { text: 'Home', link: '/' },
-        { text: 'Guide', link: '/guide/' },
-        { text: 'External', link: 'https://google.com' },
+        { text: 'Guide', link: '/guide/', },
+        { text: 'Modules', link: '/module/' },
         {
-          text: 'Guide',
-          link: '/guide/',
-        },
-        {
-          text: 'Reference',
+          text: 'Example Menu',
           children: [
-            {
-              text: 'VuePress',
-              children: [
-                {
-                  text: 'CLI',
-                  link: '/reference/cli.html',
-                },
-                '/reference/config.md',
-                '/reference/frontmatter.md',
-                '/reference/components.md',
-                '/reference/plugin-api.md',
-                '/reference/theme-api.md',
-                '/reference/client-api.md',
-                '/reference/node-api.md',
-              ],
-            },
             {
               text: 'Bundlers',
               children: [
@@ -75,11 +55,12 @@ module.exports = {
             },
           ],
         },
+        { text: 'Github', link: 'https://github.com/zakirsoft/laravel-module' },
     ],
     sidebar: {
       '/guide/': [
         '',
-        'More Informations'
+        { text: 'All Modules', link: '/module' }
       ]
     }
   },
